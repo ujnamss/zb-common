@@ -2,10 +2,10 @@ import setuptools
 
 setuptools.setup(
     name = "zb-common",
-    version = "0.0.2",
+    version = "0.0.3",
     author = "Manjunath Somashekar",
     author_email = "ujnamss@gmail.com",
-    packages = ["zb-common"],
+    packages = ["zb_common"],
     description = "A package containing all the common utilities for the Zerobugz project",
     url = "http://pypi.python.org/pypi/zb-common/",
     keywords = ["synthetic", "data", "generation"],
