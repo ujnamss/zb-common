@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name = "zb-common",
-    version = "0.0.1",
+    version = "0.0.2",
     author = "Manjunath Somashekar",
     author_email = "ujnamss@gmail.com",
     packages = ["zb-common"],
