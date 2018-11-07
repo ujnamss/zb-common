@@ -5,7 +5,8 @@ from slackclient import SlackClient
 
 class Util:
 
-    def __init__(self, cfg_path):
+    def __init__(self, cfg_path, component_name = None):
+        self.component_name = component_name
         self.conf = configparser.ConfigParser()
         self.conf.read(cfg_path)
         self.sc = None
@@ -26,6 +27,8 @@ class Util:
         return uuid.uuid4().hex
 
     def slack_log(self, channel_id, message):
+        if self.component_name != None:
+            message = "{}:{}".format(self.component_name, message)
         self.sc.api_call(
             "chat.postMessage",
             channel=channel_id,
