@@ -34,3 +34,9 @@ class Util:
             channel=channel_id,
             text=message
         )
+
+    def get_E164_US_phone_number(self, us_phone_number):
+        cleansed_ph_num = ''.join([i for i in us_phone_number if i == '+' or (i >= chr(48) and i <= chr(57))])
+        if cleansed_ph_num.startswith("+"):
+            return cleansed_ph_num
+        return "+1{}".format(cleansed_ph_num)
