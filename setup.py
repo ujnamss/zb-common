@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name = "zb-common",
-    version = "0.1.1",
+    version = "0.1.2",
     author = "Manjunath Somashekar",
     author_email = "ujnamss@gmail.com",
     packages = ["zb_common"],
@@ -11,6 +11,7 @@ setuptools.setup(
     keywords = ["synthetic", "data", "generation"],
     classifiers = [
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
         "Development Status :: 2 - Pre-Alpha",
         "Environment :: Other Environment",
@@ -28,6 +29,7 @@ This version requires Python 2.7 or later
     install_requires=[
         "requests",
         "slackclient",
-        "future>=0.16.0"
+        "future>=0.16.0",
+        "configparser"
     ],
 )
