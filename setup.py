@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name = "zb-common",
-    version = "0.0.9",
+    version = "0.1.0",
     author = "Manjunath Somashekar",
     author_email = "ujnamss@gmail.com",
     packages = ["zb_common"],
@@ -23,10 +23,11 @@ setuptools.setup(
 A package containing all the common utilities for the Zerobugz project
 -----------------------------------------------------
 
-This version requires Python 3 or later
+This version requires Python 2.7 or later
 """,
     install_requires=[
         "requests",
-        "slackclient"
+        "slackclient",
+        "future"
     ],
 )
