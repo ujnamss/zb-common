@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name = "zb-common",
-    version = "0.1.0",
+    version = "0.1.1",
     author = "Manjunath Somashekar",
     author_email = "ujnamss@gmail.com",
     packages = ["zb_common"],
@@ -28,6 +28,6 @@ This version requires Python 2.7 or later
     install_requires=[
         "requests",
         "slackclient",
-        "future"
+        "future>=0.16.0"
     ],
 )
